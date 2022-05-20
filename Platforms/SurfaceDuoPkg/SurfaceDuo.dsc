@@ -42,9 +42,10 @@
 #    1. Xiaomi Pad 5   (nabu)                                         
 #    2. LG G8          (waiting...)
 #    3. Xiaomi K20 Pro (raphael)
+#    5. QRD 855        (msmnile-qrd)
 #
 
-  DEFINE BUILD_DEVICE_ID	= 0
+  DEFINE BUILD_DEVICE_ID	= 5
 
 [BuildOptions.common]
 !if $(USE_MEMORY_FOR_SERIAL_OUTPUT) == 1
@@ -78,7 +79,12 @@
 	gSurfaceDuoPkgTokenSpaceGuid.PcdMipiFrameBufferWidth|1080
 	gSurfaceDuoPkgTokenSpaceGuid.PcdMipiFrameBufferHeight|2340
   !endif
-
+#QRD 855
+  !if $(BUILD_DEVICE_ID) == 5
+	gSurfaceDuoPkgTokenSpaceGuid.PcdMipiFrameBufferWidth|1440
+	gSurfaceDuoPkgTokenSpaceGuid.PcdMipiFrameBufferHeight|2880
+  !endif
+  
 
 
 !include SurfaceDuoPkg/Shared.dsc.inc
