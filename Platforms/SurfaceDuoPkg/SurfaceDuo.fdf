@@ -123,6 +123,10 @@ READ_LOCK_STATUS   = TRUE
     !include SurfaceDuoPkg/Include/DXE3.inc
   !endif
 
+ #QRD 855
+  !if $(BUILD_DEVICE_ID) == 5
+    !include SurfaceDuoPkg/Include/DXE5.inc
+  !endif
 
 
 
