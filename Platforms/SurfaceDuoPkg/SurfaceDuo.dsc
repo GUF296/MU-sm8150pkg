@@ -43,6 +43,7 @@
 #    2. LG G8          (waiting...)
 #    3. Xiaomi K20 Pro (raphael)
 #    5. QRD 855        (msmnile-qrd)
+#    6. Htc 5G Hub
 #
 
   DEFINE BUILD_DEVICE_ID	= 5
@@ -84,7 +85,11 @@
 	gSurfaceDuoPkgTokenSpaceGuid.PcdMipiFrameBufferWidth|1440
 	gSurfaceDuoPkgTokenSpaceGuid.PcdMipiFrameBufferHeight|2880
   !endif
-  
+  !if $(BUILD_DEVICE_ID) == 6
+	gSurfaceDuoPkgTokenSpaceGuid.PcdMipiFrameBufferWidth|768
+	gSurfaceDuoPkgTokenSpaceGuid.PcdMipiFrameBufferHeight|1024
+  !endif
+
 
 
 !include SurfaceDuoPkg/Shared.dsc.inc
