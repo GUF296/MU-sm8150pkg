@@ -86,8 +86,8 @@
 	gSurfaceDuoPkgTokenSpaceGuid.PcdMipiFrameBufferHeight|2880
   !endif
   !if $(BUILD_DEVICE_ID) == 6
-	gSurfaceDuoPkgTokenSpaceGuid.PcdMipiFrameBufferWidth|768
-	gSurfaceDuoPkgTokenSpaceGuid.PcdMipiFrameBufferHeight|1024
+	gSurfaceDuoPkgTokenSpaceGuid.PcdMipiFrameBufferWidth|720
+	gSurfaceDuoPkgTokenSpaceGuid.PcdMipiFrameBufferHeight|1280
   !endif
 
 
