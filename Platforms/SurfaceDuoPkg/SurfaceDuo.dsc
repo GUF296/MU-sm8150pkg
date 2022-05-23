@@ -86,10 +86,12 @@
 	gSurfaceDuoPkgTokenSpaceGuid.PcdMipiFrameBufferWidth|1440
 	gSurfaceDuoPkgTokenSpaceGuid.PcdMipiFrameBufferHeight|2880
   !endif
+#Htc 5G Hub
   !if $(BUILD_DEVICE_ID) == 6
 	gSurfaceDuoPkgTokenSpaceGuid.PcdMipiFrameBufferWidth|720
 	gSurfaceDuoPkgTokenSpaceGuid.PcdMipiFrameBufferHeight|1280
   !endif
+#Rog2
   !if $(BUILD_DEVICE_ID) == 7
 	gSurfaceDuoPkgTokenSpaceGuid.PcdMipiFrameBufferWidth|1080
 	gSurfaceDuoPkgTokenSpaceGuid.PcdMipiFrameBufferHeight|2340
