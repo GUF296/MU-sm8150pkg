@@ -132,7 +132,10 @@ READ_LOCK_STATUS   = TRUE
   !if $(BUILD_DEVICE_ID) == 6
     !include SurfaceDuoPkg/Include/DXE6.inc
   !endif
-
+ #rog2
+  !if $(BUILD_DEVICE_ID) == 7
+    !include SurfaceDuoPkg/Include/DXE7.inc
+  !endif
 
 
 
