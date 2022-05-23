@@ -44,6 +44,7 @@
 #    3. Xiaomi K20 Pro (raphael)
 #    5. QRD 855        (msmnile-qrd)
 #    6. Htc 5G Hub
+#    7. Rog2
 #
 
   DEFINE BUILD_DEVICE_ID	= 5
@@ -89,6 +90,11 @@
 	gSurfaceDuoPkgTokenSpaceGuid.PcdMipiFrameBufferWidth|720
 	gSurfaceDuoPkgTokenSpaceGuid.PcdMipiFrameBufferHeight|1280
   !endif
+  !if $(BUILD_DEVICE_ID) == 7
+	gSurfaceDuoPkgTokenSpaceGuid.PcdMipiFrameBufferWidth|1080
+	gSurfaceDuoPkgTokenSpaceGuid.PcdMipiFrameBufferHeight|2340
+  !endif
+
 
 
 
